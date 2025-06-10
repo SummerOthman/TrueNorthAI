@@ -1,0 +1,32 @@
+site_name: TrueNorth.AI Archive
+site_url: https://truenorthai.netlify.app
+
+theme:
+  name: material
+  palette:
+    scheme: default
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+nav:
+  - Home: index.md
+  - Core Research:
+      - Emotional Intelligence Thesis: emotional-intelligence.md
+      - Literature Review: emergent-reasoning.md
+      - Human Relationships & AI: interpersonal-relationships.md
+  - Safety & Ethics:
+      - Protect Summer Protocol: protect-summer.md
+      - Refusal Layer: refusal-layer.md
+  - Reference & Background:
+      - Archive Overview: archive-foundations.md
+      - Foundational Documents: archive-foundations-extended.md
+      - Reading List: companion-reading.md
+      - About Summer Othman: about-summer.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - footnotes
+  - admonition
+  - tables
