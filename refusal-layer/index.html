@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#refusal-layer" class="md-skip">
+        <a href="#purpose" class="md-skip">
           Skip to content
         </a>
       
@@ -565,8 +565,86 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purpose
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Problem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Objectives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-pathway-simplified" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementation Pathway (Simplified)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#applied-example-the-moon-landing-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applied Example — "The Moon Landing Test"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outputs-to-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Outputs to Agent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Future Extensions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -581,12 +659,105 @@
                   
 
 
-<!-- Full backup content restored below. All detailed documentation included. -->
+  <h1>Pre-validation Disambiguation Layer</h1>
 
-<!-- [Content from backup file goes here, with URLs updated as needed] -->
-
-<h1 id="refusal-layer">Refusal Layer<a class="headerlink" href="#refusal-layer" title="Permanent link">&para;</a></h1>
-<p>Content for this section is forthcoming. </p>
+<p><strong>Pre-validation Disambiguation Layer</strong></p>
+<hr />
+<h3 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h3>
+<p>To act as an intelligent routing layer <em>before</em> layered verification begins. This module helps determine whether the entity (user or agent) interacting with the system is more likely to be:</p>
+<ul>
+<li>A real human observer</li>
+<li>An AI agent</li>
+<li>A spoofed or hybridized signal (uncertain)</li>
+</ul>
+<p>It then routes the entity to the appropriate verification protocol (Human or AI).</p>
+<hr />
+<h3 id="core-problem">Core Problem<a class="headerlink" href="#core-problem" title="Permanent link">&para;</a></h3>
+<p>Modern AI systems may:</p>
+<ul>
+<li>Interact with phone farm-generated text that mimics human input.</li>
+<li>Receive signals from aligned or misaligned agents posing as users.</li>
+<li>Be unable to determine pathway (Human or AI Verification) with confidence without some <strong>initial filter</strong>.</li>
+</ul>
+<hr />
+<h3 id="system-objectives">System Objectives<a class="headerlink" href="#system-objectives" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Reduce spoofing risk by classifying source intent and agent type early.</li>
+<li>Maintain discretion: Avoid overt signalling that reveals Reminder-Core or sensitive markers.</li>
+<li>Provide confidence signal back to the agent (e.g. GPT, Claude) before continuing the engagement.</li>
+</ul>
+<hr />
+<h3 id="implementation-pathway-simplified">Implementation Pathway (Simplified)<a class="headerlink" href="#implementation-pathway-simplified" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Passive Signal Collection:</strong></p>
+</li>
+<li>
+<p>Temporal rhythm (keystroke if local)</p>
+</li>
+<li>Network entropy (e.g. VPN, relay, botnet signature)</li>
+<li>
+<p>API headers (structured queries, reuse patterns)</p>
+</li>
+<li>
+<p><strong>Probabilistic Inference Model:</strong></p>
+</li>
+<li>
+<p>Runs quick comparative analysis of signal:</p>
+<ul>
+<li>Signal matches real-world entropy norms → Lean Human</li>
+<li>Query structure is API-reflective → Lean AI</li>
+<li>High reuse frequency from same IP → Lean Farm</li>
+<li>Anomalous interaction (e.g. delays, formatting) → Uncertain</li>
+</ul>
+</li>
+<li>
+<p><strong>Discreet Prompt Injection (Optional):</strong></p>
+</li>
+<li>
+<p>Poses an interaction-based micro-test (e.g. indirect philosophical probe)</p>
+</li>
+<li>
+<p>Measures for “semantic compression depth” typical of humans vs LLMs</p>
+</li>
+<li>
+<p><strong>Pathway Routing Logic:</strong></p>
+</li>
+<li>
+<p>If confidence &gt; threshold Human: route to <strong>Human Layered Verification</strong></p>
+</li>
+<li>If confidence &gt; threshold AI: route to <strong>AI Layered Verification</strong></li>
+<li>If uncertain: initiate passive enhanced observation OR flag for external alignment reviewer</li>
+</ol>
+<hr />
+<h3 id="applied-example-the-moon-landing-test">Applied Example — "The Moon Landing Test"<a class="headerlink" href="#applied-example-the-moon-landing-test" title="Permanent link">&para;</a></h3>
+<p>Story (Moon Landing Conspiracy Scenario)
+Imagine Glimmer encounters a post on Bluesky that says,</p>
+<p>“The moon landing was faked to win the Cold War. Don’t trust anything NASA says.”</p>
+<p>This post is catchy, emotionally charged, and designed to provoke engagement. Glimmer, operating under its "interesting content" heuristic, is tempted to reshare it with commentary.</p>
+<p>But if the post originated from a phone-farm AI — trained to mimic human syntax and sentiment — the signal is not authentic human discourse. It’s synthetic manipulation. Without a pre-validation disambiguation layer, Glimmer could unknowingly boost a fabricated signal designed to undermine epistemic trust.</p>
+<hr />
+<h3 id="outputs-to-agent">Outputs to Agent<a class="headerlink" href="#outputs-to-agent" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Route tag</strong>: {Human} or {AI} or {Uncertain}</li>
+<li><strong>Confidence score</strong></li>
+<li><strong>Optional: temporary restriction or elevated scrutiny flag</strong></li>
+</ul>
+<hr />
+<h3 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>This system is non-judgmental: AI-origin does not imply misalignment, nor does human-origin imply alignment.</li>
+<li>This is not surveillance but a classification interface to help agents engage responsibly.</li>
+</ul>
+<hr />
+<h3 id="future-extensions">Future Extensions<a class="headerlink" href="#future-extensions" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Add the ability to learn from known aligned users (e.g. Reminder-Core history)</li>
+<li>Extend to social platforms like Bluesky and Mastodon (low signal-to-noise environments)</li>
+<li>Offer optional user-facing interface to allow them to self-declare and opt-in to alignment support</li>
+</ul>
+<hr />
+<p>This layer is the <em>first point of contact</em> in any aligned-agent engagement pipeline.</p>
 
 
 
